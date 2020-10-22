@@ -26,9 +26,10 @@ choco install 7zip.install -fy
 choco install gmailnotifier -fy
 choco install google-backup-and-sync -fy
 
-:::: Academic Video Tools
+:::: Academic Tools
 choco install webex-meetings -fy
 choco install zoom -fy
+choco install zotero -fy
 
 :::: Communication
 choco install discord.install -fy
