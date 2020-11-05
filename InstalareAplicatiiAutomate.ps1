@@ -115,6 +115,9 @@ choco install javaruntime -y
 
 choco install vlc -y
 choco install k-litecodecpack-standard -y
+choco install audacity -y
+choco install audacity-lame -y
+choco install audacity-ffmpeg -y
 #choco install dopamine -y
 #choco install itunes -y
 
