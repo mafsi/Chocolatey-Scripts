@@ -134,7 +134,7 @@ choco install etcher -y           #(Aplicație pentru flash .ISO similar cu Rufu
 choco install webex-meetings -y
 choco install zoom -y
 choco install zotero -y
-choco install pandoc --version=2.10.1 -y
+choco install pandoc -y
 
 # ::::: Group Communication & Chat
 
