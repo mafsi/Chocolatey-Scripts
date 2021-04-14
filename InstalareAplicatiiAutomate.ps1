@@ -40,21 +40,21 @@ If (-NOT ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdent
 
 Start-Sleep -Seconds 1
 
-ECHO "---------------------------------------------------"
-ECHO "Am elevat PowerShell la privilegii de Administrator" 
-ECHO "---------------------------------------------------"`n
+Write-Output "---------------------------------------------------"
+Write-Output "Am elevat PowerShell la privilegii de Administrator" 
+Write-Output "---------------------------------------------------"`n
 
 Start-Sleep -Seconds 1
 
-ECHO "---------------------------"
-ECHO "Se instaleaza Chocolatey..."
-ECHO "---------------------------"`n
+Write-Output "---------------------------"
+Write-Output "Se instaleaza Chocolatey..."
+Write-Output "---------------------------"`n
 
 Start-Sleep -Seconds 1
 
 # ::::: Instalam Chocolatey
 
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://chocolatey.org/install.ps1'))
 
 Start-Sleep -Seconds 1
 
@@ -63,25 +63,25 @@ choco feature enable -n=allowGlobalConfirmation
 
 Start-Sleep -Seconds 1
 
-ECHO "`n--------------------------------------------------------------------------"
-ECHO "Instalam extensiile de baza in caz ca unele programe cer module aditionale" 
-ECHO "--------------------------------------------------------------------------"`n
+Write-Output "`n--------------------------------------------------------------------------"
+Write-Output "Instalam extensiile de baza in caz ca unele programe cer module aditionale" 
+Write-Output "--------------------------------------------------------------------------"`n
 
 choco install chocolatey-core.extension -y
 
 Start-Sleep -Seconds 1.5
 
-ECHO "`n--------------------------------------"
-ECHO "Acum instalam interfata Chocolatey GUI" 
-ECHO "--------------------------------------"`n
+Write-Output "`n--------------------------------------"
+Write-Output "Acum instalam interfata Chocolatey GUI" 
+Write-Output "--------------------------------------"`n
 
 choco install chocolateygui -y
 
 Start-Sleep -Seconds 1.5
 
-ECHO "`n-----------------------------------------"
-ECHO "Acum instalam toate aplicatiile din lista" 
-ECHO "-----------------------------------------"`n
+Write-Output "`n-----------------------------------------"
+Write-Output "Acum instalam toate aplicatiile din lista" 
+Write-Output "-----------------------------------------"`n
 
 Start-Sleep -Seconds 1.5
 
@@ -100,8 +100,8 @@ choco install ungoogled-chromium -y            #Pachet pentru Chromium care redu
 # ::::: Text editors & Readers / IDEs
 
 #choco install notepadplusplus.install -y
-#choco install visualstudiocode -y
-choco install vscodium.install -y
+choco install visualstudiocode -y
+#choco install vscodium.install -y
 #choco install adobereader -y # Adobe Reader DC
 
 # ::::: Dev tools
@@ -113,7 +113,7 @@ choco install javaruntime -y
 
 # ::::: Media players & codecs
 
-choco install vlc -y
+#choco install vlc -y
 choco install k-litecodecpack-standard -y
 choco install audacity -y
 choco install audacity-lame -y
@@ -124,8 +124,8 @@ choco install audacity-ffmpeg -y
 # ::::: Utilities
 
 #choco install 7zip.install -y
-choco install gmailnotifier -y
-choco install google-backup-and-sync -y
+#choco install gmailnotifier -y
+#choco install google-backup-and-sync -y
 choco install teamviewer -y
 choco install etcher -y           #(Aplicație pentru flash .ISO similar cu Rufus)
 
@@ -141,8 +141,8 @@ choco install pandoc -y
 choco install discord.install -y
 
 Start-Sleep -Seconds 0.5
-ECHO "`n--------------------------------------"
-ECHO "Am terminat! PowerShell se va închide!"
-ECHO "--------------------------------------"
+Write-Output "`n--------------------------------------"
+Write-Output "Am terminat! PowerShell se va închide!"
+Write-Output "--------------------------------------"
 
 Start-Sleep -Seconds 3
