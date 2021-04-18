@@ -101,6 +101,7 @@ choco install ungoogled-chromium -y            #Pachet pentru Chromium care redu
 
 #choco install notepadplusplus.install -y
 choco install visualstudiocode -y
+choco install winmerge -y
 #choco install vscodium.install -y
 #choco install adobereader -y # Adobe Reader DC
 
@@ -111,7 +112,7 @@ choco install nodejs.install -y
 choco install github-desktop -y
 choco install javaruntime -y
 choco install choco-upgrade-all-at --params "'/WEEKLY:yes /DAY:MON /TIME:08:00'"
-choco install -y choco-cleaner
+choco install -y choco-cleaner --params "'/WEEKLY:yes /DAY:MON /TIME:11:00'"
 
 # ::::: Media players & codecs
 
@@ -128,7 +129,7 @@ choco install youtube-dl -y
 
 # ::::: Utilities
 
-#choco install 7zip.install -y
+choco install 7zip.install -y
 #choco install gmailnotifier -y
 #choco install google-backup-and-sync -y
 choco install teamviewer -y
@@ -136,6 +137,7 @@ choco install etcher -y           #(Aplicație pentru flash .ISO similar cu Rufu
 choco install -y rufus
 choco install autohotkey -y
 choco install autohotkey-compiler -y
+choco install lockhunter -y
 
 # ::::: Academic Tools
 
@@ -143,6 +145,7 @@ choco install webex-meetings -y
 choco install zoom -y
 choco install zotero -y
 choco install pandoc -y
+choco install skype -y
 
 # ::::: Group Communication & Chat
 
