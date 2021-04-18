@@ -106,10 +106,12 @@ choco install visualstudiocode -y
 
 # ::::: Dev tools
 
-#choco install git -y
-#choco install nodejs.install -y
+choco install git -y
+choco install nodejs.install -y
 choco install github-desktop -y
 choco install javaruntime -y
+choco install choco-upgrade-all-at --params "'/WEEKLY:yes /DAY:MON /TIME:08:00'"
+choco install -y choco-cleaner
 
 # ::::: Media players & codecs
 
@@ -118,7 +120,10 @@ choco install k-litecodecpack-standard -y
 choco install audacity -y
 choco install audacity-lame -y
 choco install audacity-ffmpeg -y
-#choco install dopamine -y
+choco install ffmpeg -y
+choco install dopamine -y
+choco install youtube-dl-gui.install -y
+choco install youtube-dl -y
 #choco install itunes -y
 
 # ::::: Utilities
@@ -128,6 +133,9 @@ choco install audacity-ffmpeg -y
 #choco install google-backup-and-sync -y
 choco install teamviewer -y
 choco install etcher -y           #(Aplicație pentru flash .ISO similar cu Rufus)
+choco install -y rufus
+choco install autohotkey -y
+choco install autohotkey-compiler -y
 
 # ::::: Academic Tools
 
