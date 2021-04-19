@@ -80,6 +80,15 @@ choco install chocolateygui -y
 Start-Sleep -Seconds 1.5
 
 Write-Output "`n-----------------------------------------"
+Write-Output "Auto-update Chocolatey" 
+Write-Output "-----------------------------------------"`n
+
+choco install -y choco-upgrade-all-at --params "'/WEEKLY:yes /DAY:MON /TIME:08:00'"
+choco install -y choco-cleaner --params "'/WEEKLY:yes /DAY:MON /TIME:11:00'"
+
+Start-Sleep -Seconds 1.5
+
+Write-Output "`n-----------------------------------------"
 Write-Output "Acum instalam toate aplicatiile din lista" 
 Write-Output "-----------------------------------------"`n
 
@@ -111,8 +120,7 @@ choco install git -y
 choco install nodejs.install -y
 choco install github-desktop -y
 choco install javaruntime -y
-choco install choco-upgrade-all-at --params "'/WEEKLY:yes /DAY:MON /TIME:08:00'"
-choco install -y choco-cleaner --params "'/WEEKLY:yes /DAY:MON /TIME:11:00'"
+
 
 # ::::: Media players & codecs
 
@@ -146,6 +154,7 @@ choco install zoom -y
 choco install zotero -y
 choco install pandoc -y
 choco install skype -y
+choco install miktex -y
 
 # ::::: Group Communication & Chat
 
