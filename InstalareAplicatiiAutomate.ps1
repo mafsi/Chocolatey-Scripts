@@ -68,6 +68,11 @@ Write-Output "Instalam extensiile de baza in caz ca unele programe cer module ad
 Write-Output "--------------------------------------------------------------------------"`n
 
 choco install chocolatey-core.extension -y
+choco install chocolatey-dotnetfx.extension -y
+choco install chocolatey-font-helpers.extension -y
+choco install chocolatey-misc-helpers.extension -y
+choco install chocolatey-vscode.extension -y
+choco install chocolatey-windowsupdate.extension -y
 
 Start-Sleep -Seconds 1.5
 
@@ -98,7 +103,6 @@ Start-Sleep -Seconds 1.5
 # ::::::::: LISTA DE APLICAȚII ::::::: #
 # :::::::::::::::::::::::::::::::::::::#
 
-
 # ::::: Browsers
 
 choco install firefox -y
@@ -109,7 +113,9 @@ choco install ungoogled-chromium -y            #Pachet pentru Chromium care redu
 # ::::: Text editors & Readers / IDEs
 
 #choco install notepadplusplus.install -y
-choco install visualstudiocode -y
+choco install vscode.install -y
+choco install onedarkpro-vscode -y
+choco install vscode-prettier -y
 choco install winmerge -y
 #choco install vscodium.install -y
 #choco install adobereader -y # Adobe Reader DC
@@ -120,7 +126,8 @@ choco install git -y
 choco install nodejs.install -y
 choco install github-desktop -y
 choco install javaruntime -y
-
+choco install strawberryperl -y
+choco install vcredist-all -y
 
 # ::::: Media players & codecs
 
@@ -130,10 +137,15 @@ choco install audacity -y
 choco install audacity-lame -y
 choco install audacity-ffmpeg -y
 choco install ffmpeg -y
-choco install dopamine -y
+# choco install dopamine -y
 choco install youtube-dl-gui.install -y
 choco install youtube-dl -y
 #choco install itunes -y
+
+# ::::: Fonts
+choco install FiraCode -y
+choco install jetbrainsmono -y
+choco install cascadiacode -y
 
 # ::::: Utilities
 
@@ -141,24 +153,30 @@ choco install 7zip.install -y
 #choco install gmailnotifier -y
 #choco install google-backup-and-sync -y
 choco install teamviewer -y
-choco install etcher -y           #(Aplicație pentru flash .ISO similar cu Rufus)
-choco install -y rufus
+choco install etcher -y    #(Aplicație pentru flash .ISO similar cu Rufus)
+#choco install -y rufus
 choco install autohotkey -y
 choco install autohotkey-compiler -y
 choco install lockhunter -y
+choco install poppler -y
+choco install keepass.install -y
+choco install syncthing -y
+choco install syncthing-gtk -y
+choco install winmerge -y
 
 # ::::: Academic Tools
 
-choco install webex-meetings -y
-choco install zoom -y
 choco install zotero -y
 choco install pandoc -y
-choco install skype -y
 choco install miktex -y
 
 # ::::: Group Communication & Chat
 
 choco install discord.install -y
+choco install skype -y
+choco install WhatsApp -y
+choco install webex-meetings -y
+choco install zoom -y
 
 Start-Sleep -Seconds 0.5
 Write-Output "`n--------------------------------------"
