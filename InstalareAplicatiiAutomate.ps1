@@ -72,7 +72,7 @@ choco install chocolatey-dotnetfx.extension -y
 choco install chocolatey-font-helpers.extension -y
 choco install chocolatey-misc-helpers.extension -y
 choco install chocolatey-vscode.extension -y
-choco install chocolatey-windowsupdate.extension -y
+
 
 Start-Sleep -Seconds 1.5
 
@@ -163,6 +163,8 @@ choco install keepass.install -y
 choco install syncthing -y
 choco install syncthing-gtk -y
 choco install winmerge -y
+choco install megasync -y
+choco install internet-download-manager -y
 
 # ::::: Academic Tools
 
