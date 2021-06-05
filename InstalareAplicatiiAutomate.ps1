@@ -107,7 +107,7 @@ Start-Sleep -Seconds 1.5
 
 choco install firefox -y
 choco install chromium -y
-choco install ungoogled-chromium -y            #Pachet pentru Chromium care reduce datele trimise spre Google; Trebuie instalat si pachetul de mai sus Chromium
+choco install ungoogled-chromium -y     #Pachet pentru Chromium care reduce datele trimise spre Google; Trebuie instalat si pachetul de mai sus Chromium
 
 
 # ::::: Text editors & Readers / IDEs
