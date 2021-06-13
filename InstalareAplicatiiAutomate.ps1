@@ -128,6 +128,7 @@ choco install github-desktop -y
 choco install javaruntime -y
 choco install strawberryperl -y
 choco install vcredist-all -y
+choco install python -y
 
 # ::::: Media players & codecs
 
